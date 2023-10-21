@@ -1,5 +1,7 @@
 require 'capistrano/scm/plugin'
 
+load File.expand_path("../tasks/gitcopy.rake", __FILE__)
+
 class Capistrano::GitCopy < Capistrano::SCM::Plugin
 
   # execute git with argument in the context
